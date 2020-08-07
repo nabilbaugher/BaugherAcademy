@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StatsController">
+   <children>
+      <Polygon fill="DODGERBLUE" layoutX="64.0" layoutY="77.0" points="-64.0, 646.0, 65.0, 522.0, -64.0, -74.0" stroke="BLACK" strokeType="INSIDE" styleClass="cool_triangle" />
+      <Polygon fill="DODGERBLUE" layoutX="315.0" layoutY="491.0" points="-315.0, 232.0, 965.0, 232.0, -186.0, 108.0" stroke="BLACK" strokeType="INSIDE" styleClass="cool_triangle_jr" />
+      <Button layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#goBack" styleClass="back_button" text="←" />
+      <PieChart fx:id="algebraStats" clockwise="false" labelsVisible="false" layoutX="600.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" title="Algebra" />
+      <PieChart fx:id="functionsStats" clockwise="false" labelsVisible="false" layoutX="800.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" title="Functions" />
+      <PieChart fx:id="trigStats" clockwise="false" labelsVisible="false" layoutX="1000.0" layoutY="160.0" prefHeight="200.0" prefWidth="200.0" title="Trigonometry" />
+      <PieChart fx:id="statsStats" clockwise="false" labelsVisible="false" layoutX="800.0" layoutY="363.0" prefHeight="200.0" prefWidth="200.0" title="Statistics" />
+      <PieChart fx:id="vectorsStats" clockwise="false" labelsVisible="false" layoutX="600.0" layoutY="360.0" prefHeight="200.0" prefWidth="200.0" title="Vectors" />
+      <PieChart fx:id="calculusStats" clockwise="false" labelsVisible="false" layoutX="1000.0" layoutY="360.0" prefHeight="200.0" prefWidth="200.0" title="Calculus" />
+      <BarChart fx:id="relativeStrengthByTopic" layoutX="76.0" layoutY="77.0" legendVisible="false" prefHeight="300.0" prefWidth="400.0" title="Relative Strength By Topic" verticalGridLinesVisible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="overallStats" clockwise="false" labelsVisible="false" layoutX="129.0" layoutY="377.0" prefHeight="300.0" prefWidth="300.0" />
+      <Button layoutX="429.0" layoutY="502.0" mnemonicParsing="false" onAction="#showOtherChart" prefHeight="50.0" prefWidth="120.0" styleClass="chart_button" text="Switch Chart" />
+      <ImageView fx:id="correctIncorrect" fitHeight="32.0" fitWidth="180.0" layoutX="810.0" layoutY="563.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="523.0" layoutY="20.0" prefHeight="17.0" prefWidth="235.0" styleClass="title" text="Statistics" textAlignment="CENTER" />
+      <Label fx:id="affirmation" layoutX="503.0" layoutY="64.0" prefHeight="31.0" prefWidth="274.0" styleClass="message" text="Keep up the good work!" />
+   </children>
+</AnchorPane>

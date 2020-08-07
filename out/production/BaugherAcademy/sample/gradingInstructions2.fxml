@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="960.0" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GradingInstructions2Controller">
+    <children>
+        <ImageView fx:id="grading3" fitHeight="720.0" fitWidth="480.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="grading4" fitHeight="720.0" fitWidth="480.0" layoutX="480.0" pickOnBounds="true" preserveRatio="true" />
+        <Button layoutX="384.0" layoutY="720.0" mnemonicParsing="false" onAction="#previousPage" text="Previous Page" />
+    </children>
+</AnchorPane>

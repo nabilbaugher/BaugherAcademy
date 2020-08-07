@@ -1,0 +1,72 @@
+.root{
+    -fx-background-color: white;
+}
+
+.title{
+    -fx-text-fill: #272727;
+    -fx-font-size: 36px;
+    -fx-alignment: center;
+}
+
+.message{
+    -fx-text-fill: #272727;
+    -fx-font-size: 26px;
+    -fx-alignment: center;
+}
+
+.menu_label{
+    -fx-alignment: center;
+}
+
+.button{
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-background-color: #272727;
+}
+
+.button[disabled]{
+    -fx-opacity: 50;
+}
+
+.button:pressed{
+    -fx-opacity: .8;
+}
+
+.correct_button{
+    -fx-background-color: green;
+}
+
+.back_button{
+    -fx-font-size: 16px;
+    -fx-background-color: white;
+    -fx-text-fill: #272727;
+}
+
+.reset_button{
+    -fx-background-color: #ff4f4f;
+
+}
+
+.chart_button{
+    -fx-font-size: 16px;
+}
+
+.back_button:pressed{
+    -fx-background-color: lightgray;
+}
+
+.cool_triangle{
+    -fx-fill: #272727;
+}
+
+.cool_triangle_jr{
+    -fx-fill: #03DAC6;
+}
+
+.default-color0.chart-pie {
+    -fx-pie-color: #03DAC6;
+}
+
+.default-color1.chart-pie {
+    -fx-pie-color: #272727;
+}
